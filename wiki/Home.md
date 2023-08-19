@@ -4,7 +4,7 @@ You've in the MoonDeck wiki, congrats!
 
 # What's next?
 
-* If you're setting up Buddy, follow the [Buddy installation guide](./Buddy-installation-guide.md).
+* If you're setting up Buddy, follow the [Buddy installation guide](Buddy-installation-guide.md).
 * If you have some issues with the plugin:
   * check the [Troubleshooting](./Troubleshooting.md) page, maybe someone else had similar issue already;
   * enable debug logs, maybe it's something obvious (check the [Buddy configuration](./Buddy-configuration.md) page on how to do it);
