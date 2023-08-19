@@ -27,7 +27,7 @@ For Sunshine apps, MoonDeck allows to set the display resolution for all importe
 
 ## [SteamDeck] Failed to find application MoonDeckStream
 
-Make sure the [Sunshine setup](./Sunshine-setup.md) step has been completed.
+Make sure the [Sunshine setup](./Sunshine-setup) step has been completed.
 
 If it still does not work, it could be one of the following:
 * Restart Sunshine (yes, it really helps sometimes).
@@ -53,7 +53,7 @@ This means that everything is OK **if** it is complaining about self signed cert
 
 #### ERR_SSL_VERSION_OR_CIPHER_MISMATCH
 
-If you're getting this error code instead, you need to downgrade the SSL protocol version to TLS 1.2 (see [Buddy configuration](./Buddy-configuration.md) page). Don't forget to restart Buddy afterwards!
+If you're getting this error code instead, you need to downgrade the SSL protocol version to TLS 1.2 (see [Buddy configuration](./Buddy-configuration) page). Don't forget to restart Buddy afterwards!
 
 ### Make sure that Buddy is not blocked by the firewall
 

@@ -17,7 +17,7 @@ By default, almost every application uses the default display when starting up. 
 
 1. Configure Sunshine to use the desired display for stream capture:
 ![image](../.github/assets/sunshine-display.png)
-2. Configure Buddy, to use correct display for changing resolution by setting the `handled_displays` (see [Buddy configuration](Buddy-configuration.md) page) option to `["\\\\.\\DISPLAY3"]` (note the additional slashes).
+2. Configure Buddy, to use correct display for changing resolution by setting the `handled_displays` (see [Buddy configuration](Buddy-configuration) page) option to `["\\\\.\\DISPLAY3"]` (note the additional slashes).
 3. Configure **MoonDeckStream** app entry in Sunshine to change primary display before and after stream. On Windows you can use [NirCmd](https://www.nirsoft.net/utils/nircmd.html) to achieve this. This step is necessary as most of the games use the default display when starting up.
 ![image](../.github/assets/sunshine-nircmd.png)
 4. You **might** also want to change Steam's Big Picture preferred display if it starts elsewhere ignoring the step 3.

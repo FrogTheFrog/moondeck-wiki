@@ -17,7 +17,7 @@ Verify that the app is running:
 ### Step 4
 
 Add MoonDeckStream to the Sunshine Apps List (or GFE while it's still kicking).
-See [Sunshine setup](./Sunshine-setup.md) page for more info.
+See [Sunshine setup](./Sunshine-setup) page for more info.
 
 ### Step 5 (optional)
 
@@ -64,7 +64,7 @@ Verify that the app is running (reused image from Windows :/):
 ### Step 4
 
 Add MoonDeckStream to the Sunshine Apps List.
-See [Sunshine setup](./Sunshine-setup.md) page for more info.
+See [Sunshine setup](./Sunshine-setup) page for more info.
 
 ### Step 5 (optional)
 
