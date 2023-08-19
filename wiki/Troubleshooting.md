@@ -6,7 +6,7 @@ Instead of a correctly scaled image like this:
 ![image](images/scaling-good.png)
 
 You might end up with some black borders or otherwise cropped image:
-![image](../.github/assets/scaling-bad.png)
+![image](images/scaling-bad.png)
 
 ### So far, there are 2 known sources of this issue:
 
@@ -17,7 +17,7 @@ The external display is selected as a primary one. For some reason this can real
 #### Issue 2
 
 The Moonlight's display resolution used by Gamescope is set to anything other than the actual display size. It should at **least** be set to native: 
-![image](../.github/assets/scaling-native.png)
+![image](images/scaling-native.png)
 
 ##### MoonDeck already helps you with this!
 
@@ -47,7 +47,7 @@ Enter the following on the host PC in a web browser (assuming that you did not c
 `https://localhost:59999/apiVersion`
 
 You should see something along the lines of:
-![image](../.github/assets/cert-error.png)
+![image](images/cert-error.png)
 
 This means that everything is OK **if** it is complaining about self signed certificate.
 

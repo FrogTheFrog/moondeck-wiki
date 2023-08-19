@@ -12,7 +12,7 @@ Go to the [Releases](https://github.com/FrogTheFrog/moondeck-buddy/releases) pag
 
 Verify that the app is running:
 
-![tray-icon](../.github/assets/tray-icon-win.png)
+![tray-icon](images/tray-icon-win.png)
 
 ### Step 4
 
@@ -27,7 +27,7 @@ If MoonDeckBuddy is unreachable from outside the PC, whitelist it in Windows' fi
 
 Enable autostart by clicking on the icon (right-click) and selecting the following option:
 
-![startup-option](../.github/assets/startup-option-win.png)
+![startup-option](images/startup-option-win.png)
 
 ## Linux
 
@@ -59,7 +59,7 @@ $ ./MoonDeckStream # This will invoke MoonDeckStream binary
 
 Verify that the app is running (reused image from Windows :/):
 
-![tray-icon](../.github/assets/tray-icon-linux.png)
+![tray-icon](images/tray-icon-linux.png)
 
 ### Step 4
 
@@ -70,7 +70,7 @@ See [Sunshine setup](./Sunshine-setup) page for more info.
 
 Enable autostart by clicking on the icon (right-click) and selecting the following option:
 
-![startup-option](../.github/assets/startup-option-linux.png)
+![startup-option](images/startup-option-linux.png)
 
 ## Note about autostart
 
