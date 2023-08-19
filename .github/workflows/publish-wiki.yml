@@ -23,9 +23,11 @@ jobs:
         with:
           token: ${{ secrets.PUBLISH_TOKEN }}
           repository: FrogTheFrog/moondeck
+          dry-run: true
 
       - name: Publish to MoonDeckBuddy wiki
         uses: Andrew-Chen-Wang/github-wiki-action@v4
         with:
           token: ${{ secrets.PUBLISH_TOKEN }}
           repository: FrogTheFrog/moondeck-buddy
+          dry-run: true
