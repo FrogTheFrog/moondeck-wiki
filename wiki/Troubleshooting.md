@@ -3,7 +3,7 @@
 This issue mostly haunts people using external displays.
 
 Instead of a correctly scaled image like this:
-![image](../.github/assets/scaling-good.png)
+![image](images/scaling-good.png)
 
 You might end up with some black borders or otherwise cropped image:
 ![image](../.github/assets/scaling-bad.png)
