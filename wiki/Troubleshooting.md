@@ -3,10 +3,10 @@
 This issue mostly haunts people using external displays.
 
 Instead of a correctly scaled image like this:
-![image](.github/assets/scaling-good.md)
+![image](../.github/assets/scaling-good.png)
 
 You might end up with some black borders or otherwise cropped image:
-![image](.github/assets/scaling-bad.md)
+![image](../.github/assets/scaling-bad.png)
 
 ### So far, there are 2 known sources of this issue:
 
@@ -17,7 +17,7 @@ The external display is selected as a primary one. For some reason this can real
 #### Issue 2
 
 The Moonlight's display resolution used by Gamescope is set to anything other than the actual display size. It should at **least** be set to native: 
-![image](.github/assets/scaling-native.md)
+![image](../.github/assets/scaling-native.png)
 
 ##### MoonDeck already helps you with this!
 
@@ -27,7 +27,7 @@ For Sunshine apps, MoonDeck allows to set the display resolution for all importe
 
 ## [SteamDeck] Failed to find application MoonDeckStream
 
-Make sure the **Sunshine setup** step has been completed.
+Make sure the [Sunshine setup](./Sunshine-setup.md) step has been completed.
 
 If it still does not work, it could be one of the following:
 * Restart Sunshine (yes, it really helps sometimes).
@@ -47,13 +47,13 @@ Enter the following on the host PC in a web browser (assuming that you did not c
 `https://localhost:59999/apiVersion`
 
 You should see something along the lines of:
-![image](.github/assets/cert-error.png)
+![image](../.github/assets/cert-error.png)
 
 This means that everything is OK **if** it is complaining about self signed certificate.
 
 #### ERR_SSL_VERSION_OR_CIPHER_MISMATCH
 
-If you're getting this error code instead, you need to downgrade the SSL protocol version to TLS 1.2 (see **Buddy configuration** pager). Don't forget to restart Buddy afterwards!
+If you're getting this error code instead, you need to downgrade the SSL protocol version to TLS 1.2 (see [Buddy configuration](./Buddy-configuration.md) page). Don't forget to restart Buddy afterwards!
 
 ### Make sure that Buddy is not blocked by the firewall
 

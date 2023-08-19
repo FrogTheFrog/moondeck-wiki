@@ -3,4 +3,4 @@
 
 All related log files start with `moondeck...` prefix!
 
-To enable more verbose logging on Buddy, check the **Buddy configuration** page.
+To enable more verbose logging on Buddy, check the [Buddy configuration](./Buddy-configuration.md) page.
