@@ -57,7 +57,7 @@ $ ./MoonDeckStream # This will invoke MoonDeckStream binary
 
 ### Step 3
 
-Verify that the app is running (reused image from Windows :/):
+Verify that the app is running:
 
 ![tray-icon](images/tray-icon-linux.png)
 
