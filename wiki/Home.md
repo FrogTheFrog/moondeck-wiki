@@ -1,10 +1,3 @@
-
-
-I could write something fancy here or copy-paste the readme page, but I will not waste any more of your precious time other than the time you've already spent reading this sentence!
-
-Instead take a look at the navigation panel and choose where to go.
-
-
 # Huh? Where am I?
 
 You've in the MoonDeck wiki, congrats!
