@@ -70,3 +70,8 @@ Possible values:
 - `TlsV1_2OrLater`;
 - `TlsV1_3`;
 - `TlsV1_3OrLater`.
+
+### Force Big Picture
+`default: true`
+
+If set to `true`, the Buddy will try open Steam in Big Picture mode before launching the game.
