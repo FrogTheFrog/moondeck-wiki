@@ -35,6 +35,12 @@ If it still does not work, it could be one of the following:
 * If you have multiple host sharing very similar name where only difference is lower-case and upper-case letters, Moonlight might also select an incorrect one to start the stream with.
 * You still have Nvidia Gamestream enabled and the Moonlight tries to connect it instead of Sunshine.
 
+## [Windows + AMD CPU with iGPU] Game starts, but MoonDeck times out
+
+There is a bug for AMD CPUs with integrated graphics. See [#41](https://github.com/FrogTheFrog/moondeck-buddy/issues/41#issuecomment-1627467014) for more info.
+
+If you have such a CPU, try disabling the iGPU in the Windows' Device Manager or BIOS. It seems to cause more issues than just MoonDeck timing out.
+
 ## [Windows] Controller input is not working
 
 This is a Sunshine or Moonlight issue. If migrating from Sunshine version <0.17, they recommend to do a complete reinstall. Otherwise try reinstalling `ViGEmBus` (on Windows) or asking on their Discord for support.
