@@ -11,6 +11,68 @@ Bellow an example of the required settings using a non-standard installation pat
 
 ![image](images/sunshine-example.png)
 
+## [Windows] Disable HDR while streaming
+
+If you have HDR enabled, you can use the Windows' keyboard shortcut to toggle HDR or this script which will emulate the shortcut input for you:
+```
+$source = @"
+using System;
+using System.Threading.Tasks;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
+namespace Sunshine
+{
+    public class Utils
+    {
+        [DllImport("user32.dll")]
+        public static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+
+        private const int KEYEVENTF_EXTENDEDKEY = 0x0001;
+        private const int KEYEVENTF_KEYUP = 0x0002;
+
+        // From https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
+        private const byte VK_LWIN = 0x5B;
+        private const byte VK_ALT = 0x12;
+        private const byte VK_B = 0x42;
+
+        public static void ToggleHdr()
+        {
+            // Press down the keyboard shortcut
+            keybd_event(VK_ALT, 0, KEYEVENTF_EXTENDEDKEY, 0);
+            keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY, 0);
+            keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY, 0);
+            
+            // Release the keyboard shortcut
+            keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+            keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+            keybd_event(VK_ALT, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+        }
+    }
+}
+"@
+Add-Type -TypeDefinition $source -ReferencedAssemblies "System.Windows.Forms"
+
+Write-Output "Toggle HDR"
+[Sunshine.Utils]::ToggleHdr()
+Write-Output "HDR toggled"
+```
+
+Save it to `togglehdr.ps1` somewhere and insert the following command into the "do/undo" fields:
+
+`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File "<ScriptLocationDirectory>\togglehdr.ps1"` (replace `<ScriptLocationDirectory>` with an actual directory)
+
+## [Windows + Nvidia GPU] Toggle G-Sync
+
+Sometimes there might be some strange behaviour caused by G-Sync:
+- FPS locked to 58 FPS instead of 60;
+- frame instability (not stuttering, but just does not feel "right").
+
+If you notice such issues, you can toggle the G-Sync using this command line [tool](https://github.com/FrogTheFrog/gsync-toggle).
+
+## [Windows + Nvidia GPU] Toggle Frame Rate Limiter
+
+If you're using the Nvidia's built-in frame limiter, you can use this command line [tool](https://github.com/FrogTheFrog/frl-toggle) change it while streaming.
+
 ## Streaming other displays
 
 By default, almost every application uses the default display when starting up. In case you want to use other display for streams, here's what you need to do (Windows shall be used as an example with a `\\.\DISPLAY3` as the end goal):
