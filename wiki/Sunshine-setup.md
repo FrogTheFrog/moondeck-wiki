@@ -13,7 +13,9 @@ Bellow an example of the required settings using a non-standard installation pat
 
 ## [Windows] Disable HDR while streaming
 
-If you have HDR enabled, you can use the Windows' keyboard shortcut to toggle HDR or this script which will emulate the shortcut input for you:
+If you have HDR enabled, you can use the Windows' keyboard shortcut to toggle HDR.
+
+This can be automated with this [tool](https://github.com/ejams1/HDRToggle) or this script which will emulate the shortcut input for you:
 ```
 $source = @"
 using System;
