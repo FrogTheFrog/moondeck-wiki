@@ -76,3 +76,8 @@ Possible values:
 
 If set to `true`, the Buddy will try open Steam in Big Picture mode before launching the game.
 If set to `false`, it is up to the user to ensure that the game is launched in time (by clliking on launcher or by other means) before MoonDeck times out!
+
+### Close Steam Before Sleep
+`default: true`
+
+If set to `true`, the Buddy will try to close Steam before going to sleep or hibernation. Some games are able to recover after sleep, while others will just crash the OS and restart the PC. Use with caution!
