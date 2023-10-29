@@ -81,3 +81,25 @@ If set to `false`, it is up to the user to ensure that the game is launched in t
 `default: true`
 
 If set to `true`, the Buddy will try to close Steam before going to sleep or hibernation. Some games are able to recover after sleep, while others will just crash the OS and restart the PC. Use with caution!
+
+### [LINUX ONLY] Registry file override
+`default: ""`
+
+Specify custom `registry.vdf` location. Needed if running Steam from flatpak.
+
+Example location: `/home/frog/.var/app/com.valvesoftware.Steam/.steam/registry.vdf`.
+
+### [LINUX ONLY] Steam binary override
+`default: ""`
+
+Specify custom Steam binary location. Needed if running Steam from flatpak.
+
+In case you're using flatpak:
+1. Create a file that you want to use as binary.
+2. Set the contents to:
+```
+#!/bin/sh
+exec flatpak run com.valvesoftware.Steam "$@"
+```
+3. `chmod +x <file>`
+4. Use the new file as Steam binary. 
