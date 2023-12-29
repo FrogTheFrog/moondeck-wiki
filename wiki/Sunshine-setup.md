@@ -6,7 +6,7 @@ All you have to do is to add a new app with the following:
 * "**Command**" field set to the `MoonDeckStream` executable, using the installation folder created during Moondeck Buddy's setup.
   * On Windows, the default should be `<BuddyInstallDirectory>\bin\MoonDeckStream.exe` (replace `<BuddyInstallDirectory>` with the file path of where it is installed).
   * On Linux, it depends on the earlier setup, but it can be as simple as `/home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
-* "**Conttinue streaming...**" - just disable the checkbox.
+* "**Continue streaming...**" - just disable the checkbox.
 
 Bellow an example of the required settings using a non-standard installation path:
 
