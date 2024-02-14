@@ -82,6 +82,13 @@ If set to `false`, it is up to the user to ensure that the game is launched in t
 
 If set to `true`, the Buddy will try to close Steam before going to sleep or hibernation. Some games are able to recover after sleep, while others will just crash the OS and restart the PC. Use with caution!
 
+### Mac Address Override
+`default: ""`
+
+If Buddy fails to select the correct MAC address, you can override it using this setting. Supported formats:
+- `XX:XX:XX:XX:XX:XX`
+- `XX-XX-XX-XX-XX-XX`
+
 ### [LINUX ONLY] Registry file override
 `default: ""`
 
