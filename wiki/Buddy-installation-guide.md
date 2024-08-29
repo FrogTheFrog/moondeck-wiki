@@ -29,7 +29,22 @@ Enable autostart by clicking on the icon (right-click) and selecting the followi
 
 ![startup-option](images/startup-option-win.png)
 
-## Linux
+## Arch Linux
+
+### Step 1
+Install the [moondeckbuddy-appimage](https://aur.archlinux.org/packages/moondeckbuddy-appimage) through the Arch User Repository (AUR).
+
+### Step 2
+
+Start MoonDeckBuddy or MoonDeckStream from the CLI with:
+```
+$ moondeckbuddy
+$ moondeckstream
+```
+
+Continue [Step 3](### Step 3) in Linux install below.
+
+## Linux Other (AppImage)
 
 ### Step 1
 
