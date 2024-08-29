@@ -44,7 +44,7 @@ namespace Sunshine
             keybd_event(VK_ALT, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY, 0);
-            
+
             // Release the keyboard shortcut
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
@@ -87,4 +87,3 @@ By default, almost every application uses the default display when starting up. 
 ![image](images/sunshine-nircmd.png)
 4. You **might** also want to change Steam's Big Picture preferred display if it starts elsewhere ignoring the step 3.
 ![image](images/sunshine-bigpicture.png)
-
