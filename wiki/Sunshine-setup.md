@@ -6,6 +6,7 @@ All you have to do is to add a new app with the following:
 * "**Command**" field set to the `MoonDeckStream` executable, using the installation folder created during Moondeck Buddy's setup.
   * On Windows, the default should be `<BuddyInstallDirectory>\bin\MoonDeckStream.exe` (replace `<BuddyInstallDirectory>` with the file path of where it is installed).
   * On Linux, it depends on the earlier setup, but it can be as simple as `/home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
+  * If using Arch Linux AUR package set command to `moondeckstream`.
 * "**Continue streaming...**" - just disable the checkbox.
 
 Bellow an example of the required settings using a non-standard installation path:
@@ -44,7 +45,7 @@ namespace Sunshine
             keybd_event(VK_ALT, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY, 0);
-            
+
             // Release the keyboard shortcut
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
@@ -87,4 +88,3 @@ By default, almost every application uses the default display when starting up. 
 ![image](images/sunshine-nircmd.png)
 4. You **might** also want to change Steam's Big Picture preferred display if it starts elsewhere ignoring the step 3.
 ![image](images/sunshine-bigpicture.png)
-
