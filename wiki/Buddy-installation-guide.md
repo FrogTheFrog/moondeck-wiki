@@ -42,7 +42,7 @@ $ moondeckbuddy
 $ moondeckstream
 ```
 
-Continue [Step 3](### Step 3) in Linux install below.
+Continue [Step 3](#step-3-1) in Linux install below.
 
 ## Linux Other (AppImage)
 
