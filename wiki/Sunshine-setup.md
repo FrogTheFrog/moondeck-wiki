@@ -44,7 +44,7 @@ namespace Sunshine
             keybd_event(VK_ALT, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY, 0);
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY, 0);
-            
+
             // Release the keyboard shortcut
             keybd_event(VK_B, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
             keybd_event(VK_LWIN, 0, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
