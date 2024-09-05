@@ -41,6 +41,14 @@ Note: in the Buddy's configuration the screen is referred to as a display due to
 
 Resolution change not supported yet as the [API](https://wayland.app/protocols/wlr-output-management-unstable-v1) is not mature enough and the compositor support is lacking.
 
+*Note:* Although we cannot change the resolution through sunshine and, we can nicely ask the ask the DE compositor to set through the sunshine *Do* and *Undo* actions.
+
+- KDE Plasma:
+
+ 1. Use `kscreen-doctor -o` to determine available outputs and resolutions.
+ 2. Set sunshine *DO* `kscreen-doctor output.X1.mode.Y1` to the desired client streaming resolution.
+ 3. Set sunshine *UNDO* `kscreen-doctor output.X2.mode.Y2` back to the original resolution.
+
 ##### Finding the display names
 
 You can enable the debug mode to check what displays are available as they are printed when trying to change resolution.
@@ -109,4 +117,4 @@ In case you're using flatpak:
 exec flatpak run com.valvesoftware.Steam "$@"
 ```
 3. `chmod +x <file>`
-4. Use the new file as Steam binary. 
+4. Use the new file as Steam binary.
