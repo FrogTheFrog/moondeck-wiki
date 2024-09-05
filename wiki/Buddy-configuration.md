@@ -49,7 +49,7 @@ Resolution change not supported yet as the [API](https://wayland.app/protocols/w
  2. Set sunshine *DO* `kscreen-doctor output.X1.mode.Y1` to the desired client streaming resolution.
  3. Set sunshine *UNDO* `kscreen-doctor output.X2.mode.Y2` back to the original resolution.
 
-#### Linux Idle
+#### Linux Inhibit Sleep and Idle
 
 If a game is paused or input is delayed within the idle time limit, power savings can put the monitor to sleep or suspend the system. This can cause issues when trying to resume a game at a later time. You can use systemd-inhibit in order to enforce the system will stay awake, while MoonDeckStream is active. Prepend the following to the *Command* in the Sunshine MoonDeckStream configuration.
 
