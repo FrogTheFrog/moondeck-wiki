@@ -38,8 +38,8 @@ Install the [moondeckbuddy-appimage](https://aur.archlinux.org/packages/moondeck
 
 Start MoonDeckBuddy or MoonDeckStream from the CLI with:
 ```
-$ moondeckbuddy
-$ moondeckstream
+$ MoonDeckBuddy
+$ MoonDeckStream
 ```
 
 Continue [Step 3](#step-3-1) in Linux install below.
