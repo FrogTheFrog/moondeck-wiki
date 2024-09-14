@@ -25,6 +25,8 @@ If MoonDeckBuddy is unreachable from outside the PC, whitelist it in Windows' fi
 
 ### Step 6 (optional)
 
+*Version 1.6.2 and later will have the Windows installer enable autostart by default.*
+
 Enable autostart by clicking on the icon (right-click) and selecting the following option:
 
 ![startup-option](images/startup-option-win.png)
@@ -91,4 +93,6 @@ Enable autostart by clicking on the icon (right-click) and selecting the followi
 
 It creates the shortcut in the user's startup directory pointing to the executable. If you move the executable around it will point to the invalid location and you will need to recreate the shortcut by turning the autostart off and on again.
 
-Also if you remove the app without turning it off, you will need to remove it manually.
+Also if you remove the app without turning it off, you will need to remove it.
+
+*Version 1.6.2 and later will have the Windows uninstaller automatically remove it.*
