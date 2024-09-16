@@ -41,6 +41,10 @@ Note: in the Buddy's configuration the screen is referred to as a display due to
 
 Resolution change not supported yet as the [API](https://wayland.app/protocols/wlr-output-management-unstable-v1) is not mature enough and the compositor support is lacking.
 
+*Note:* Although we cannot change the resolution directly with sunshine, we can nicely ask the ask the Wayland compositor to set the resolution using sunshine's **Do** and **Undo** actions.
+
+Refer to the sunshine documentation section: [Changing Resolution and Refresh Rate](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/guides/app_examples.html#changing-resolution-and-refresh-rate).
+
 ##### Finding the display names
 
 You can enable the debug mode to check what displays are available as they are printed when trying to change resolution.
@@ -109,4 +113,4 @@ In case you're using flatpak:
 exec flatpak run com.valvesoftware.Steam "$@"
 ```
 3. `chmod +x <file>`
-4. Use the new file as Steam binary. 
+4. Use the new file as Steam binary.
