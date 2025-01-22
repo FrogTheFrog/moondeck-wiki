@@ -1,6 +1,6 @@
 # Huh? Where am I?
 
-You've in the MoonDeck wiki, congrats!
+You're in the MoonDeck wiki, congrats!
 
 # What's next?
 
