@@ -20,35 +20,6 @@ Can be used to enable/disable logging for various categories.
 
 By default, Buddy logs information that is of severity **INFO** or above. To enable Buddy's debug logs, set the parameter value to `"buddy.*.debug=true"`.
 
-### Handled displays
-`default: []`
-
-#### Windows
-
-By default, Buddy will change resolution for display(-s) that is marked as primary.
-
-Here you can override this choice, with a list of display names that you want to change resolution for instead.
-
-#### Linux (X11)
-
-By default, Buddy will change resolution for the **default** screen of the **default** display.
-
-Here you can override the screen choice, with a list of screen names that you want to change resolution for instead.
-
-Note: in the Buddy's configuration the screen is referred to as a display due to different concepts between X11 and Windows. Buddy will always work with the default display from the environment.
-
-#### Linux (Wayland)
-
-Resolution change not supported yet as the [API](https://wayland.app/protocols/wlr-output-management-unstable-v1) is not mature enough and the compositor support is lacking.
-
-*Note:* Although we cannot change the resolution directly with sunshine, we can nicely ask the ask the Wayland compositor to set the resolution using sunshine's **Do** and **Undo** actions.
-
-Refer to the sunshine documentation section: [Changing Resolution and Refresh Rate](https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/guides/app_examples.html#changing-resolution-and-refresh-rate).
-
-##### Finding the display names
-
-You can enable the debug mode to check what displays are available as they are printed when trying to change resolution.
-
 ### Sunshine apps filepath
 `default: ""`
 
@@ -93,17 +64,10 @@ If Buddy fails to select the correct MAC address, you can override it using this
 - `XX:XX:XX:XX:XX:XX`
 - `XX-XX-XX-XX-XX-XX`
 
-### [LINUX ONLY] Registry file override
+### Steam Exec Override
 `default: ""`
 
-Specify custom `registry.vdf` location. Needed if running Steam from flatpak.
-
-Example location: `/home/frog/.var/app/com.valvesoftware.Steam/.steam/registry.vdf`.
-
-### [LINUX ONLY] Steam binary override
-`default: ""`
-
-Specify custom Steam binary location. Needed if running Steam from flatpak.
+Specify custom Steam executable location. Needed if running Steam from flatpak.
 
 In case you're using flatpak:
 1. Create a file that you want to use as binary.
