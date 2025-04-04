@@ -46,12 +46,6 @@ Possible values:
 - `TlsV1_3`;
 - `TlsV1_3OrLater`.
 
-### Force Big Picture
-`default: true`
-
-If set to `true`, the Buddy will try open Steam in Big Picture mode before launching the game.
-If set to `false`, it is up to the user to ensure that the game is launched in time (by clliking on launcher or by other means) before MoonDeck times out!
-
 ### Close Steam Before Sleep
 `default: true`
 
