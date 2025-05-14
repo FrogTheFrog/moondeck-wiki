@@ -35,6 +35,12 @@ If it still does not work, it could be one of the following:
 * If you have multiple host sharing very similar name where only difference is lower-case and upper-case letters, Moonlight might also select an incorrect one to start the stream with.
 * You still have Nvidia Gamestream enabled and the Moonlight tries to connect it instead of Sunshine.
 
+## [SteamDeck] I stopped the stream on my Deck, but Sunshine says it was only paused. Sunshine isn't running my Undo commands.
+
+To close the stream entirely, you must close the game on the host PC. This is as simple as clicking "Quit" in the menu of most games. After this, Sunshine will end your stream on its own. **Newer versions of Sunshine** will wait a few seconds to make sure the game closes properly before ending the stream. This wait period can be controlled via the [Exit Timeout field when setting up Sunshine](./Sunshine-setup). Sunshine only runs Undo commands when the stream has fully exited.
+
+**Note**: If you stop the stream without closing the game (via L1+R1+Select+Start or choosing "Exit Game" in the Steam menu), **Sunshine will merely pause the stream instead of ending it**. This also happens if you close the game and stop the stream before Sunshine does. To allow Sunshine to properly close the stream and run your commands, either wait for the timeout to happen, or lower the wait period in Sunshine's settings.
+
 ## [Windows + AMD CPU with iGPU] Game starts, but MoonDeck times out
 
 There is a bug for AMD CPUs with integrated graphics. See [#41](https://github.com/FrogTheFrog/moondeck-buddy/issues/41#issuecomment-1627467014) for more info.
