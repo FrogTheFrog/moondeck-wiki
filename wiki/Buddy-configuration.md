@@ -72,3 +72,12 @@ exec flatpak run com.valvesoftware.Steam "$@"
 ```
 3. `chmod +x <file>`
 4. Use the new file as Steam binary.
+
+### Env Capture Regex
+`default: "^(?:SUNSHINE|APOLLO).*"`
+
+Environmental variables to be captured by `MoonDeckStream` and passed to `MoonDeckBuddy`.
+
+They are then used when launching Steam or an app. Can be used with SpecialK for an automatic FPS limiter, however Steam must be started everytime for this to work. This can be partially achieved by configuring MoonDeck to close Steam after every sucessful stream.
+
+For more details see https://github.com/FrogTheFrog/moondeck-buddy/pull/144.
