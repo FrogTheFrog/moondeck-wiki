@@ -109,6 +109,6 @@ It creates 2 `systemd` services:
 
 These 2 services keep the `MoonDeckBuddy` alive when switching between the SteamDeck's Desktop and GameMode modes, for example. However, for the first time you need to manually restart the device in order for the services to kick in or you need exit `MoonDeckBuddy` first and then start them manually: `systemctl --user start moondeckbuddy && systemctl --user start moondeckbuddy-gui-session`.
 
-See [Buddy configuration](./Buddy-configuration) page for more info about the **GUI**/**headless** modes.
+See [Buddy configuration](./Buddy-configuration#no_gui) page for more info about the **GUI**/**headless** modes.
 
 Autostart needs to be disabled manually, before you remove the app.
