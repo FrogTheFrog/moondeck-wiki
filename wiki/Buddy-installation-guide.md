@@ -1,4 +1,4 @@
-# Windows
+## Windows
 
 ### Step 1
 
@@ -93,8 +93,22 @@ Enable autostart by clicking on the icon (right-click) and selecting the followi
 
 ## Note about autostart
 
+### Windows
+
 It creates the shortcut in the user's startup directory pointing to the executable. If you move the executable around it will point to the invalid location and you will need to recreate the shortcut by turning the autostart off and on again.
 
 Also if you remove the app without turning it off, you will need to remove it.
 
 *Version 1.6.2 and later will have the Windows uninstaller automatically remove it.*
+
+### Linux
+
+It creates 2 `systemd` services:
+  - `moondeckbuddy.service` - responsible for starting the `MoonDeckBuddy` in a **headless** mode.
+  - `moondeckbuddy-gui-session.service` - it attaches itself to `xdg-desktop-autostart.target` and restarts the `MoonDeckBuddy` in a **GUI** mode when the DE session is running (**GUI** mode needs display to be available, otherwise the app will crash). When the DE session is about to end, `MoonDeckBuddy` will be restarted again in the **headless** mode.
+
+These 2 services keep the `MoonDeckBuddy` alive when switching between the SteamDeck's Desktop and GameMode modes, for example. However, for the first time you need to manually restart the device in order for the services to kick in or you need exit `MoonDeckBuddy` first and then start them manually: `systemctl --user start moondeckbuddy && systemctl --user start moondeckbuddy-gui-session`.
+
+See [Buddy configuration](./Buddy-configuration) page for more info about the **GUI**/**headless** modes.
+
+Autostart needs to be disabled manually, before you remove the app.
