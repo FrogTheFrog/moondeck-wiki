@@ -6,6 +6,22 @@ On Windows the configuration file is located next to the executable.
 
 On Linux the configuration file is located in `$XDG_CONFIG_HOME/moondeckbuddy` or `~/.config/moondeckbuddy`.
 
+## Environment
+
+### NO_GUI
+`default: ""`
+
+Controls whether the `MoonDeckBuddy` is started with the **GUI** (Graphical User Interface) or without (**headless**).
+
+If **GUI** mode is enabled and the compositor/display is gone for whatever reason, Qt Framework will terminate `MoonDeckBuddy` on Linux (unknown what happens on Windows).
+
+In the **headless** mode some of the UI-related functionality will be disabled, like desktop notifications and pairing with `MoonDeck`.
+
+Possible values:
+- `1`, `true` - will start in **headless** mode;
+- `auto` - will try to guess is the display is available or not (linux only) and start accordingly, however this affects only the startup (the app can still crash if the display is gone);
+- any other value - will start in **GUI** mode.
+
 ## Settings
 
 ### Port
