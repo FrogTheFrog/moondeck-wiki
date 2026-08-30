@@ -6,6 +6,7 @@ All you have to do is to add a new app with the following:
 * "**Command**" field set to the `MoonDeckStream` executable, using the installation folder created during Moondeck Buddy's setup.
   * On Windows, the default should be `<BuddyInstallDirectory>\bin\MoonDeckStream.exe` (replace `<BuddyInstallDirectory>` with the file path of where it is installed).
   * On Linux, it depends on the earlier setup, but it can be as simple as `/home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
+    * If Sunshine is installed as a [flatpak](https://flathub.org/en/apps/dev.lizardbyte.app.Sunshine) you must launch the AppImage with flatpak-spawn. E.g. `flatpak-spawn --host -- /home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
 * "**Continue streaming...**" - just disable the checkbox.
 
 Bellow an example of the required settings using a non-standard installation path:
