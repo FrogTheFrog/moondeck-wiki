@@ -3,13 +3,13 @@
 All you have to do is to add a new app with the following:
 
 * "**Application Name**" field set as **MoonDeckStream** (default). You can also customize which application name to use in MoonDeck settings in case you would like to have specialized "do/undo" logic.
-* "**Command**" field set to the `MoonDeckStream` executable, using the installation folder created during Moondeck Buddy's setup.
+* "**Command**" field set to the `MoonDeckStream` executable, using the installation folder created during MoonDeck Buddy's setup.
   * On Windows, the default should be `<BuddyInstallDirectory>\bin\MoonDeckStream.exe` (replace `<BuddyInstallDirectory>` with the file path of where it is installed).
   * On Linux, it depends on the earlier setup, but it can be as simple as `/home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
     * If Sunshine is installed as a [flatpak](https://flathub.org/en/apps/dev.lizardbyte.app.Sunshine) you must launch the AppImage with flatpak-spawn. E.g. `flatpak-spawn --host -- /home/frog/Downloads/MoonDeckBuddy.AppImage --exec MoonDeckStream`.
-* "**Continue streaming...**" - just disable the checkbox.
+* Uncheck the "**Continue streaming if the application exits quickly**" checkbox. You do NOT need to uncheck the "**Continue streaming until all app processes exit**" checkbox.
 
-Bellow an example of the required settings using a non-standard installation path:
+Below is an example of the required settings using a non-standard installation path:
 
 ![image](images/sunshine-example.png)
 
@@ -19,7 +19,7 @@ Sometimes there might be some strange behaviour caused by G-Sync:
 - FPS locked to 58 FPS instead of 60;
 - frame instability (not stuttering, but just does not feel "right").
 
-If you notice such issues, you can toggle the G-Sync using this command line [tool](https://github.com/FrogTheFrog/gsync-toggle).
+If you notice such issues, you can toggle G-Sync using this command line [tool](https://github.com/FrogTheFrog/gsync-toggle).
 
 ## [Windows + Nvidia GPU] Toggle Frame Rate Limiter
 
