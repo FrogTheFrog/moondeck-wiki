@@ -45,11 +45,6 @@ If the value is left empty (default):
 * on Windows the registry will be checked for possible Sunshine installation directory;
 * on Linux the default config location is used as a fallback (`$XDG_CONFIG_HOME/sunshine` or `~/.config/sunshine`).
 
-### Prefer hibernation
-`default: false`
-
-If set to `true`, the Buddy will try to put the PC into hibernation mode if it is available. Otherwise it will try to suspend the PC as usual.
-
 ### Ssl Protocol
 `default: "SecureProtocols"`
 
@@ -61,11 +56,6 @@ Possible values:
 - `TlsV1_2OrLater`;
 - `TlsV1_3`;
 - `TlsV1_3OrLater`.
-
-### Close Steam Before Sleep
-`default: true`
-
-If set to `true`, the Buddy will try to close Steam before going to sleep or hibernation. Some games are able to recover after sleep, while others will just crash the OS and restart the PC. Use with caution!
 
 ### Mac Address Override
 `default: ""`
